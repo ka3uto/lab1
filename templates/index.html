@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collaborative Grid - Лабораторна 1</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header class="header"><h1>Collaborative Grid</h1><div id="status" class="status">Підключення...</div></header>
+  <main><div class="grid-wrap"><div id="grid" class="grid"></div></div><p id="log" class="log">Очікування стану сервера.</p></main>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
